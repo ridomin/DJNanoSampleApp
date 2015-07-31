@@ -1,10 +1,12 @@
 ﻿DJ Nano Sample App (Windows App Studio)
-==================
+=======================================
+
 
 This app has been created with [Windows App Studio](http://appstudio.windows.com) 
 and modified with Visual Studio.
 
-**Store Packages
+Store Packages
+--------------
 
 This app has three different versions, that you can download from the Windows Store
 
