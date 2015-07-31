@@ -13,6 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{531D01
 		.nuget\NuGet.config = .nuget\NuGet.config
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D4C56896-94BF-4317-99E0-8FF43E9FF98D}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		DJNANO.Shared\DJNANO.Shared.projitems*{f1b7cd26-b48b-4d1a-b667-fee5429591e2}*SharedItemsImports = 4
