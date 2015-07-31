@@ -1,0 +1,47 @@
+[
+  {
+    "Title": "Everything is alright Remixes",
+    "Subtitle": "DJ Nano Show",
+    "ImageUrl": "/Assets/DataImages/Portada1.png",
+    "Link": "http://music.xbox.com/Album/d1b83b07-0100-11db-89ca-0019b92a3933?partnerID=DJNanoShow",
+    "Description": "<ul><li>Everything Is Alright feat. Fashion Beat Team (Carlos Jean Remix)</li><li>Everything Is Alright feat. Fashion Beat Team (FBT Remix)</li><li>Everything Is Alright feat. Fashion Beat Team (Zoe! Remix)</li><li>Everything Is Alright feat. Fashion Beat Team (Kaze Remix)</li></ul>",
+    "NavigationSource": "",
+    "_id": "54097d0c80f1f4056c2ee7c7"
+  },
+  {
+    "Title": "Everything is alright ",
+    "Subtitle": "DJ Nano",
+    "ImageUrl": "/Assets/DataImages/Portada2.png",
+    "Link": "http://music.xbox.com/Album/20e42207-0100-11db-89ca-0019b92a3933?partnerID=DJNanoShow",
+    "Description": "<ul><li>Everything Is Alright (feat. Fashion Beat Team)</li></ul>",
+    "NavigationSource": "",
+    "_id": "54097d0c80f1f4056c2ee7c8"
+  },
+  {
+    "Title": "Only Boy",
+    "Subtitle": "DJ Nano and Odille Lima",
+    "ImageUrl": "/Assets/DataImages/Portada3.png",
+    "Link": "http://music.xbox.com/Album/05f23907-0100-11db-89ca-0019b92a3933?partnerID=DJNanoShow",
+    "Description": "<ul><li>Only Boy</li></ul>",
+    "NavigationSource": "",
+    "_id": "54097d0c80f1f4056c2ee7c9"
+  },
+  {
+    "Title": "The Next Road",
+    "Subtitle": "The Nano and Kate Ryan",
+    "ImageUrl": "/Assets/DataImages/Portada4.png",
+    "Link": "http://music.xbox.com/Album/55db3d07-0100-11db-89ca-0019b92a3933?partnerID=DJNanoShow",
+    "Description": "<ul><li>Everything Is Alright (feat. Fashion Beat Team)</li></ul>",
+    "NavigationSource": "",
+    "_id": "54097d0c80f1f4056c2ee7ca"
+  },
+  {
+    "Title": "Lighters",
+    "Subtitle": "DJ Nano and Rebeka Brown",
+    "ImageUrl": "/Assets/DataImages/Portada5.png",
+    "Link": "http://music.xbox.com/Album/6b2c1708-0100-11db-89ca-0019b92a3933?partnerID=DJNanoShow",
+    "Description": "<ul><li>Lighters</li></ul>",
+    "NavigationSource": "",
+    "_id": "54097d0c80f1f4056c2ee7cb"
+  }
+]

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:appstudio="http://schemas.microsoft.com/developer/appx/2015/appstudio" IgnorableNamespaces="uap mp appstudio">
+  <Identity Name="14531AppStudioTeam.DJNanoShow" Publisher="CN=CE0293F3-B3A0-451B-88AE-DE3CD6F7F850" Version="1.2.4.0" />
+  <mp:PhoneIdentity PhoneProductId="f079a57d-fb37-4e31-be1b-212a20dbe380" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>DJ Nano Show</DisplayName>
+    <PublisherDisplayName>App Studio Team</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="DJNANO.App">
+      <uap:VisualElements DisplayName="DJ NANO" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Official DJ Nano App created with App Studio" BackgroundColor="#000000">
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:DefaultTile>
+          <uap:TileUpdate Recurrence="halfHour" UriTemplate="http://ds.winappstudio.com/api/tile/f079a57d-fb37-4e31-be1b-212a20dbe380/bbcdf6a7-c7ff-4628-b3b3-fc115477e455?columnName=ImageUrl" />
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+  <appstudio:Metadata>
+    <appstudio:Item Name="appId" Value="f079a57d-fb37-4e31-be1b-212a20dbe380" />
+    <appstudio:Item Name="model" Version="1.11" />
+    <appstudio:Item Name="formula" Value="Win10" Version="1.11.0722.1" />
+    <appstudio:Item DataSource="Collection" Version="0.3.189-alpha-08" />
+    <appstudio:Item DataSource="YouTube" Version="0.3.189-alpha-08" />
+    <appstudio:Item DataSource="Menu" Version="0.3.189-alpha-08" />
+    <appstudio:Item DataSource="Instagram" Version="0.3.189-alpha-08" />
+    <appstudio:Item DataSource="Facebook" Version="0.3.189-alpha-08" />
+    <appstudio:Item DataSource="Twitter" Version="0.3.189-alpha-08" />
+    <appstudio:Item DataSource="Html" Version="0.3.189-alpha-08" />
+  </appstudio:Metadata>
+</Package>

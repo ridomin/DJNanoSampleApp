@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:appstudio="http://schemas.microsoft.com/developer/appx/2015/appstudio" IgnorableNamespaces="appstudio">
+  <Identity Name="14531AppStudioTeam.DJNanoShow" Publisher="CN=CE0293F3-B3A0-451B-88AE-DE3CD6F7F850" Version="1.1.19.0" />
+  <Properties>
+    <DisplayName>DJ Nano Show</DisplayName>
+    <PublisherDisplayName>App Studio Team</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="DJNANO.App">
+      <m2:VisualElements DisplayName="DJ NANO" Description="Official DJ Nano App created with App Studio" ForegroundText="light" BackgroundColor="#000000" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png">
+        <m2:DefaultTile ShortName="DJ NANO" Wide310x150Logo="Assets\Wide310x150Logo.png" Square70x70Logo="Assets\Square70x70Logo.png">
+          <m2:TileUpdate Recurrence="halfHour" UriTemplate="http://ds.winappstudio.com/api/tile/817d0baf-4b9c-4b0f-894f-2210734bd402/03b2a14d-dd3e-4bc0-90c4-f4587d1e4881?columnName=ImageUrl" />
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+            <m2:ShowOn Tile="wide310x150Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#000000" />
+        <m2:ApplicationView MinWidth="width320" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+  <appstudio:Metadata>
+    <appstudio:Item Name="appId" Value="817d0baf-4b9c-4b0f-894f-2210734bd402" />
+    <appstudio:Item Name="model" Version="1.11" />
+    <appstudio:Item Name="formula" Value="Win81" Version="1.11.0722.1" />
+    <appstudio:Item DataSource="Collection" Version="0.3.189-alpha-08" />
+    <appstudio:Item DataSource="YouTube" Version="0.3.189-alpha-08" />
+    <appstudio:Item DataSource="Menu" Version="0.3.189-alpha-08" />
+    <appstudio:Item DataSource="Instagram" Version="0.3.189-alpha-08" />
+    <appstudio:Item DataSource="Facebook" Version="0.3.189-alpha-08" />
+    <appstudio:Item DataSource="Twitter" Version="0.3.189-alpha-08" />
+    <appstudio:Item DataSource="Html" Version="0.3.189-alpha-08" />
+  </appstudio:Metadata>
+</Package>

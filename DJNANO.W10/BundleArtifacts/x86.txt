@@ -1,0 +1,2 @@
+MainPackage=C:\_code\Repos\WasCodeIncubator\DJNano\DJNANO.W10\bin\x86\Release\DJNANO.W10_1.2.4.0_x86.appx
+SymbolPackage=C:\_code\Repos\WasCodeIncubator\DJNano\DJNANO.W10\AppPackages\DJNANO.W10_1.2.4.0\DJNANO.W10_1.2.4.0_x86.appxsym
