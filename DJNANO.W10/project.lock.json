@@ -15245,7 +15245,7 @@
       ]
     },
     "WindowsAppStudio.Common/0.1.0": {
-      "sha512": "XFqsTu5Uk4bG2g4NsTQgDgEBJ8l57ObKs1lhhSrbegX+bet/re3zCqgrcIpFPiXyH2OsKLMe6eJj55WNsuarZA==",
+      "sha512": "jnuyQk6nAP0ahczMtDr3AJQ610/qrQivryJ0lLZEQ0ONnC4Xnnc3ZFy3Pb2FNcxdKxiFgbDwdpaHhMj0Rt+vdg==",
       "type": "Package",
       "files": [
         "_rels/.rels",
@@ -15254,7 +15254,7 @@
         "lib/portable-win81+wpa81/AppStudio.Common.pdb",
         "lib/portable-win81+wpa81/AppStudio.Common.pri",
         "lib/portable-win81+wpa81/AppStudio.Common.xr.xml",
-        "package/services/metadata/core-properties/303451d48ec242e09b26b89e8436f825.psmdcp",
+        "package/services/metadata/core-properties/eb59d112e3ea45dd8e87b939ce40ea03.psmdcp",
         "[Content_Types].xml"
       ]
     },
@@ -15279,7 +15279,7 @@
       ]
     },
     "WindowsAppStudio.DataProviders/0.1.0": {
-      "sha512": "gtZOSrmkaVT+XPc0nAzbflD2ewh0RD9Ya2yxRHPTsGxk5MiwJkRJu07UIOJ6mjHaBf+ablRtctqtW0iew3vW+w==",
+      "sha512": "YWOW819LNdYCtPO2+Z7yxmQyAiVHkzhz6ZwlcY2uT2xKe5SEWvqvsGWHfhFGCod4lsfQRu4VGFavEuqpwkEMwA==",
       "type": "Package",
       "files": [
         "_rels/.rels",
@@ -15287,7 +15287,7 @@
         "lib/portable-win81+wpa81/AppStudio.DataProviders.dll",
         "lib/portable-win81+wpa81/AppStudio.DataProviders.pdb",
         "lib/portable-win81+wpa81/AppStudio.DataProviders.pri",
-        "package/services/metadata/core-properties/50e75aaeb4034d19b10a27e9f96ffa06.psmdcp",
+        "package/services/metadata/core-properties/e9ce1d32a5c844efba06774572bebeaa.psmdcp",
         "[Content_Types].xml"
       ]
     }

@@ -83,21 +83,8 @@ namespace DJNANO.ViewModels
             var loadDataTasks = GetViewModels().Select(vm => vm.LoadDataAsync());
 
             await Task.WhenAll(loadDataTasks);
-
             OnPropertyChanged("LastUpdated");
-            List<ItemViewModel> deprecatedItems = new List<ItemViewModel>();
-            foreach (var t in Tours.Items)
-            {
-                DateTime dt = DateTime.ParseExact(t.Content, "dd/mm/yyyy", CultureInfo.InvariantCulture);
-                if (dt.Ticks < DateTime.Now.Ticks)
-                {
-                    deprecatedItems.Add(t);
-                }
-            }
-            foreach (var t in deprecatedItems)
-            {
-                Tours.Items.Remove(t);
-            }
+            ToursConfig.RemoveDeprecatedTours(Tours.Items);
         }
 
         private async void Refresh()
@@ -109,6 +96,7 @@ namespace DJNANO.ViewModels
             await Task.WhenAll(refreshDataTasks);
 
             OnPropertyChanged("LastUpdated");
+            ToursConfig.RemoveDeprecatedTours(Tours.Items);
         }
 
         private IEnumerable<DataViewModelBase> GetViewModels()

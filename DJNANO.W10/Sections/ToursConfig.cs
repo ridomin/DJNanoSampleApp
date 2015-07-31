@@ -13,6 +13,7 @@ using DJNANO.ViewModels;
 using System.Globalization;
 using Windows.ApplicationModel.Appointments;
 using Windows.UI.Xaml;
+using System.Collections.ObjectModel;
 
 namespace DJNANO.Sections
 {
@@ -42,7 +43,7 @@ namespace DJNANO.Sections
 
         public override NavigationInfo ListNavigationInfo
         {
-            get 
+            get
             {
                 return NavigationInfo.FromPage("ToursListPage");
             }
@@ -50,7 +51,7 @@ namespace DJNANO.Sections
 
         public override ListPageConfig<Tours1Schema> ListPage
         {
-            get 
+            get
             {
                 return new ListPageConfig<Tours1Schema>
                 {
@@ -62,14 +63,18 @@ namespace DJNANO.Sections
                         viewModel.SubTitle = item.Cuando.ToSafeString();
                         viewModel.Description = "";
                         viewModel.Image = "";
-                        viewModel.MainCommand = new RelayCommand(() =>
+                        var dateTime = DateTimeSafeStringParse(item.DondeDT);
+                        if (dateTime != null)
                         {
-                            Appointment a = new Appointment();
-                            a.Subject = "DJ Nano Show en " + item.Cuando + " el día " + item.Donde;
-                            a.StartTime = new System.DateTimeOffset(DateTime.ParseExact(item.DondeDT, "dd/mm/yyyy", CultureInfo.InvariantCulture));
-                            a.AllDay = true;
-                            var s = AppointmentManager.ShowAddAppointmentAsync(a, RectHelper.Empty);
-                        });
+                            viewModel.MainCommand = new RelayCommand(() =>
+                            {
+                                Appointment a = new Appointment();
+                                a.Subject = "DJ Nano Show en " + item.Cuando + " el día " + item.Donde;
+                                a.StartTime = new System.DateTimeOffset(dateTime.Value);
+                                a.AllDay = true;
+                                var s = AppointmentManager.ShowAddAppointmentAsync(a, RectHelper.Empty);
+                            });
+                        }
                         viewModel.Content = item.DondeDT;
                     },
                     NavigationInfo = (item) =>
@@ -80,15 +85,44 @@ namespace DJNANO.Sections
             }
         }
 
+        public static DateTime? DateTimeSafeStringParse(string stringDateTime)
+        {
+            string dateTimeFormat = "dd/MM/yyyy";
+            DateTime result;
+            bool success = DateTime.TryParseExact(stringDateTime, dateTimeFormat, CultureInfo.InvariantCulture, DateTimeStyles.None, out result);
+            if (success) return result;
+            else return null;            
+        }
+
+        public static void RemoveDeprecatedTours(ObservableCollection<ItemViewModel> items)
+        {
+            List<ItemViewModel> deprecatedItems = new List<ItemViewModel>();
+            foreach (var t in items)
+            {
+                var dateTime = ToursConfig.DateTimeSafeStringParse(t.Content);
+                if (dateTime != null)
+                {
+                    if (dateTime.Value.Ticks < DateTime.Now.Ticks)
+                    {
+                        deprecatedItems.Add(t);
+                    }
+                }
+            }
+            foreach (var t in deprecatedItems)
+            {
+                items.Remove(t);
+            }
+        }
+
         public override DetailPageConfig<Tours1Schema> DetailPage
         {
             get
             {
                 var bindings = new List<Action<ItemViewModel, Tours1Schema>>();
 
-				var actions = new List<ActionConfig<Tours1Schema>>
-				{
-				};
+                var actions = new List<ActionConfig<Tours1Schema>>
+                {
+                };
 
                 return new DetailPageConfig<Tours1Schema>
                 {

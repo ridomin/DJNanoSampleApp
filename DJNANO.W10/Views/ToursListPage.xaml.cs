@@ -13,12 +13,13 @@ namespace DJNANO.Views
         {
             this.ViewModel = new ListViewModel<DynamicStorageDataConfig, Tours1Schema>(new ToursConfig());
             this.InitializeComponent();
-}
+        }
 
         public ListViewModel<DynamicStorageDataConfig, Tours1Schema> ViewModel { get; set; }
         protected async override void LoadState(object navParameter)
         {
             await this.ViewModel.LoadDataAsync();
+            ToursConfig.RemoveDeprecatedTours(ViewModel.Items);
         }
 
     }
